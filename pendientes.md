@@ -16,6 +16,12 @@ Este documento lista las tareas pendientes en el frontend de React, organizadas 
   - Archivos: `app/comparativo/page.tsx`, servicios de datos comparativos
   - Acción: Conectar los componentes de gráfico (`BarChartComparison`, `LineChartComparison`) a endpoints reales y agregar el gráfico de líneas si falta.
 
+### 1.3 Home
+
+- [ ] **Gráfico central debe ser de patologías, no emociones**
+  - Archivo: `app/page.tsx`
+  - Acción: Renombrar título y ajustar datos (`apiEmotions`) → Requiere nuevo endpoint.
+    
 ### 1.8 Alertas (Grilla y Creación)
 - [ ] **Grilla debe estar ordenada por fecha y hora descendente**
   - Archivos: `app/alertas/page.tsx`, `components/data-table.tsx`
@@ -64,9 +70,6 @@ Este documento lista las tareas pendientes en el frontend de React, organizadas 
 - [ ] **Campanita de alertas muestra todas, no solo pendientes**
   - Archivos: `components/recent-alerts.tsx`, `services/home-service.ts`
   - Acción: Ajustar `fetchRecentAlerts` para que acepte filtro de estado o sea filtrado en backend.
-- [ ] **Gráfico central debe ser de patologías, no emociones**
-  - Archivo: `app/page.tsx`
-  - Acción: Renombrar título y ajustar datos (`apiEmotions`) → Requiere nuevo endpoint.
 - [ ] **"Alertas recientes" no se actualiza con el colegio**
   - Archivos: `components/recent-alerts.tsx`, `services/home-service.ts`, `lib/api-config.ts`
   - Acción: Asegurar que `fetchRecentAlerts` reciba `colegio_id`.
@@ -88,11 +91,13 @@ Este documento lista las tareas pendientes en el frontend de React, organizadas 
 Estos puntos son responsabilidad del backend, pero son críticos para el correcto funcionamiento del frontend.
 
 - [ ] **Motor de Preguntas**
+  - Auditoria (Pendiente Inicio Proceso, termino de proceso, cantidad de registrados procesados, control de error, correo envio a casilla de equipo tècnico)
 - [ ] **Motor de Alertas**
-  - Amarillas
+  - Amarillas (Pendiente revisar dias consecutivos y feriados)
   - Naranjas
   - Rojas
-  - Inactividad
+  - Inactividad (Pendiente implementar)
+  - Auditoria (Pendiente Inicio Proceso, termino de proceso, cantidad de registrados procesados, control de error, correo envio a casilla de equipo tècnico)
 - [ ] **Motor de Informes**
   - Gustos
   - Alumnos por mes
